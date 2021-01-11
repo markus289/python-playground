@@ -2,6 +2,7 @@ name: dash
 channels:
   - defaults
 dependencies:
+  - black
   - dash
   - flake8
   - pandas
