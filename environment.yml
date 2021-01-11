@@ -1,0 +1,8 @@
+name: dash
+channels:
+  - defaults
+dependencies:
+  - dash
+  - flake8
+  - pandas
+  - rope
