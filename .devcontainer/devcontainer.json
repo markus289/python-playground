@@ -18,7 +18,8 @@
 	},
 	"extensions": [
 		"ms-python.python",
-		"ms-python.vscode-pylance"
+		"ms-python.vscode-pylance",
+		"vscodevim.vim"
 	],
 	"remoteUser": "vscode",
 	"postCreateCommand": "python -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt"
