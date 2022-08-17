@@ -2,24 +2,26 @@
 	"name": "Python",
 	"dockerFile": "Dockerfile",
 	"settings": {
+		"[python]": { "editor.rulers": [88] },
+		"editor.rulers": [80],
+		"extensions.ignoreRecommendations": true,
 		"files.insertFinalNewline": true,
 		"files.trimTrailingWhitespace": true,
 		"files.trimFinalNewlines": true,
-		"files.watcherExclude": {
-			"**/.venv/**": true
-		},
-		"workbench.colorTheme": "Default Dark+",
-		"editor.formatOnSave": true,
+		"files.watcherExclude": { "**/.venv/**": true },
 		"python.formatting.provider": "black",
-		"python.linting.pylintEnabled": false,
-		"python.linting.flake8Enabled": true,
 		"python.linting.enabled": true,
-		"python.languageServer": "Pylance"
+		"python.linting.flake8Enabled": true,
+		"python.linting.pylintEnabled": false,
+		"redhat.telemetry.enabled": false,
+		"telemetry.enableCrashReporter": false,
+		"telemetry.enableTelemetry": false,
+		"vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+		"workbench.colorTheme": "Default Light+"
 	},
 	"extensions": [
 		"ms-python.python",
-		"ms-python.vscode-pylance",
-		"vscodevim.vim"
+		"asvetliakov.vscode-neovim"
 	],
 	"remoteUser": "vscode",
 	"postCreateCommand": "python -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt"
