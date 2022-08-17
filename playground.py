@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# SPDX-FileCopyrightText: 2021 Markus Rothe
+# SPDX-FileCopyrightText: Copyright 2021 Markus Rothe
 #
 # SPDX-License-Identifier: EUPL-1.2
 
