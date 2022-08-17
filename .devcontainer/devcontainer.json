@@ -16,12 +16,10 @@
 		"redhat.telemetry.enabled": false,
 		"telemetry.enableCrashReporter": false,
 		"telemetry.enableTelemetry": false,
-		"vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
 		"workbench.colorTheme": "Default Light+"
 	},
 	"extensions": [
-		"ms-python.python",
-		"asvetliakov.vscode-neovim"
+		"ms-python.python"
 	],
 	"remoteUser": "vscode",
 	"postCreateCommand": "python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt"
