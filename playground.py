@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-# Copyright 2021-2022 Markus Rothe
+
+# SPDX-FileCopyrightText: 2021 Markus Rothe
+#
 # SPDX-License-Identifier: EUPL-1.2
 
 def main():
