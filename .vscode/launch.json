@@ -8,7 +8,7 @@
             "program": "${workspaceFolder}/playground.py",
             "console": "integratedTerminal",
             "env": {
-                "PYTHONPATH": "${workspaceRoot}"
+                "PYTHONPATH": "${workspaceFolder}"
             }
         }
     ]
