@@ -15,8 +15,7 @@
 		"python.linting.pylintEnabled": false,
 		"redhat.telemetry.enabled": false,
 		"telemetry.enableCrashReporter": false,
-		"telemetry.enableTelemetry": false,
-		"workbench.colorTheme": "Default Light+"
+		"telemetry.enableTelemetry": false
 	},
 	"extensions": [
 		"ms-python.python"
