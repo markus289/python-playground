@@ -3,6 +3,15 @@
   "dockerFile": "Dockerfile",
   "customizations": {
     "vscode": {
+      "extensions": [
+        "asciidoctor.asciidoctor-vscode",
+        "ms-python.black-formatter",
+        "ms-python.flake8",
+        "ms-python.python",
+        "ms-vscode-remote.remote-ssh",
+        "redhat.ansible",
+        "vscodevim.vim"
+      ],
       "settings": {
         "[python]": {
           "editor.rulers": [
@@ -14,32 +23,19 @@
         ],
         "extensions.ignoreRecommendations": true,
         "files.insertFinalNewline": true,
-        "files.trimTrailingWhitespace": true,
         "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
         "files.watcherExclude": {
           "**/.venv/**": true,
           "**/venv/**": true
         },
         "git.openRepositoryInParentFolders": "never",
         "python.analysis.typeCheckingMode": "strict",
-        "python.formatting.provider": "black",
-        "python.linting.enabled": true,
-        "python.linting.flake8Enabled": true,
-        "python.linting.pylintEnabled": false,
         "redhat.telemetry.enabled": false,
         "telemetry.enableCrashReporter": false,
         "telemetry.enableTelemetry": false,
         "workbench.colorTheme": "Default Light Modern"
-      },
-      "extensions": [
-        "asciidoctor.asciidoctor-vscode",
-        "ms-python.black-formatter",
-        "ms-python.flake8",
-        "ms-python.python",
-        "ms-vscode-remote.remote-ssh",
-        "redhat.ansible",
-        "vscodevim.vim"
-      ]
+      }
     }
   },
   "remoteUser": "vscode",
