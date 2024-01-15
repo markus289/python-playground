@@ -15,7 +15,10 @@ if (-not(Test-Path -Path .\venv\)) {
 
 # Ensure the virtual environment contains all packages from requirements.txt
 .\venv\Scripts\pip --disable-pip-version-check install wheel
-.\venv\Scripts\pip --disable-pip-version-check install -r requirements.txt
+
+if (Test-Path -Path .\requirements.txt) {
+    .\venv\Scripts\pip --disable-pip-version-check install -r requirements.txt
+}
 
 if (Test-Path -Path .\requirements-local.txt) {
     .\venv\Scripts\pip --disable-pip-version-check install -r requirements-local.txt

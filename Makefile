@@ -7,7 +7,9 @@ export PYTHON
 .PHONY: all
 all: .venv/bin/activate
 	.venv/bin/pip --disable-pip-version-check install wheel
+ifneq (,$(wildcard ./requirements.txt))
 	.venv/bin/pip --disable-pip-version-check install -r requirements.txt
+endif
 ifneq (,$(wildcard ./requirements-local.txt))
 	.venv/bin/pip --disable-pip-version-check install -r requirements-local.txt
 endif
